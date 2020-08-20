@@ -3,9 +3,29 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    top:0;
+    padding-top:0;
+    position:relative;
+    margin:0;
+}
+.home-body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover; 
 }
 .clr {
     clear: both;
+}
+#home-section {
+    max-width: 100%;
+    height: 70VH;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(20, 4, 63);
+    font-size: 36px;
 }
 
 /* Navigation bar styling */
@@ -13,25 +33,23 @@ body {
     list-style: none;
     margin-bottom: 20px;
     padding-right: 50px;
-    background: royalblue;
-    border-radius: 5px;
-    overflow:hidden;
+    background: rgb(245, 245, 245);
+    overflow: auto;
+    margin-top: 0;
 }
-
 .navbar li{
     float:right;
-    
 }
 .navbar li a{
     display: block;
-    padding: 10px 20px;
+    padding: 20px 20px;
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color: #222;
 } 
 .navbar li a:hover{
-    background-color:  rgb(38, 9, 146);
-    color: #ccc;
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #eee;
 } 
 .box {
     float: left;
@@ -41,6 +59,7 @@ body {
     margin-bottom: 10px;
     background: #ccc;
     color:#333;
+    
 }
 .box h3 {
     font-size: 24px;
@@ -48,7 +67,6 @@ body {
 #skill{
     float: right;
 }
-
 #image {
     display: block;
     height: 400px;
@@ -98,8 +116,94 @@ h3{
     padding: 10px;
     margin-bottom: 10px;
 }
-.fab .fas{
+#main-footer a{
     display: block;
     float: left;
     color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Contact.html styling */
+.underline{
+    background-color: #4809d1;
+    height: 5px;
+    width: 50px;
+    margin: 10px auto 20px auto;
+}
+.in-touch{
+    font-family: 'Quicksand', sans-serif;
+    color: #222;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.personae{
+    background-color: #00bfff;
+    height: 400px;
+    width: 25%;
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.personae h3 {
+    color: white;
+}
+.fill-in{
+    height: 400px;
+    width: 68%;
+    float: right;
+    clear: right;
+    font-family: 'Quicksand', sans-serif;
+    color: #222;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.fill-in h3{
+    color: #222;
+}
+.drop-message{
+    margin: 0;
+}
+.underline-2{
+    background-color: #4809d1;
+    height: 5px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.form-container{
+    display: block;
+    width: 80%;
+}
+input{
+    display: block;
+    margin-top: 10px;
+    width: 49%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border-color: #444;
+    border-width: thin;
+    float: left;
+}
+.email{
+    float: right;
+}
+textarea {
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+.contact-socials a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 0;
+    margin-right: 10px;
+    float: left;
 }
