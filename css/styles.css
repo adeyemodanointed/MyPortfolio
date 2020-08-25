@@ -126,29 +126,35 @@ h3{
 
 /* Contact.html styling */
 .underline{
-    background-color: #4809d1;
+    background-color: #0db2e9;
     height: 5px;
     width: 50px;
-    margin: 10px auto 20px auto;
+    margin: 5px auto 20px auto;
 }
 .in-touch{
     font-family: 'Quicksand', sans-serif;
     color: #222;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .personae{
-    background-color: #00bfff;
+    background-color: #0db2e9;
     height: 400px;
     width: 25%;
     float: left;
+    clear: both;
     color: white;
     padding: 10px;
 }
 .personae h3 {
     color: white;
+    margin-bottom: 0;
 }
+.personae p {
+    margin-top: 5px;
+}
+
 .fill-in{
     height: 400px;
     width: 68%;
@@ -163,10 +169,10 @@ h3{
     color: #222;
 }
 .drop-message{
-    margin: 0;
+    margin: 0px 0px 5px 0px;
 }
 .underline-2{
-    background-color: #4809d1;
+    background-color: #0db2e9;
     height: 5px;
     width: 50px;
     margin-bottom: 20px;
@@ -186,6 +192,14 @@ input{
     border-width: thin;
     float: left;
 }
+.submit {
+    width: 100px;
+    background: #0db2e9;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: white;
+}
 .email{
     float: right;
 }
@@ -197,7 +211,7 @@ textarea {
 }
 textarea:focus {
     outline: none;
-    border-color: blue;
+    border-color: #0db2e9;
 }
 .contact-socials a {
     display: block;
@@ -206,4 +220,37 @@ textarea:focus {
     margin-top: 0;
     margin-right: 10px;
     float: left;
+}
+
+/* Portfolio styling */
+.portfolio-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.portfolio-container h1 {
+    text-align: center;
+    margin: 0;
+}
+.box-1{
+    background: #ccc;
+    height: 300px;
+    width: 30%;
+    float: left;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 3.33%;
+    padding: 10px;    
+}
+.box-1 img {
+    display: inline-block;
+    width: 100%;
+}
+.box-1 h3 {
+    text-align: center;
+    color: #333;
+}
+.box-1 p {
+    text-align: center;
+    color: #333;   
+    font-size: 0.8rem;
 }
