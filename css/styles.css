@@ -10,7 +10,7 @@ body {
 }
 .home-body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/img-1.jpg");
     background-position: center;
     background-size: cover; 
 }
@@ -18,14 +18,22 @@ body {
     clear: both;
 }
 #home-section {
+    display: flex;
     max-width: 100%;
-    height: 70VH;
+    height: 50VH;
     margin: auto;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
-    font-weight: bolder;
-    color: rgb(20, 4, 63);
-    font-size: 36px;
+    color: #222;
+    
+}
+
+#home-section div {
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /* Navigation bar styling */
@@ -73,6 +81,79 @@ body {
     border-radius: 50%;
     margin: auto;
 }  
+
+/* Skill session */
+.skill-set {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.home-skill {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+.text-primary {
+    color: chocolate;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.line-up {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    height: 30px;
+    padding-top: 0;
+    border-radius: 20px;
+    text-align: center;
+}
+.line-up:last-child{
+    margin-bottom: 10px;
+}
+.skill-value {
+    margin-right: 0.75rem;
+    font-weight: bolder;
+    color: #333;
+    margin-bottom: 0;
+}
+.html-done {
+    width: 70%;
+    margin: 0;
+    padding: 5px;
+}
+.css-done {
+    width: 50%;
+    margin: 0;
+    padding: 5px;
+}
+.js-done {
+    width: 20%;
+    margin: 0;
+    padding: 5px;
+}
+
+.html-done,
+.css-done,
+.js-done {
+    border-radius: 20px;
+    background: chocolate;
+} 
+
+/* Testimonial section */
+/* #testimonials {
+    display: flex;
+    justify-content: space-between;
+}
+.placeholder-image {
+    width: 100px;
+    height: 100px;
+} */
+
  /* Styling for about section  */
 #about-section {
     max-width: 100%;
@@ -86,16 +167,13 @@ body {
 #details p {
     font-size: 18px;
 }
-h3{
-    color: royalblue;
-}
 
 /* Styling for footer */
 #main-footer {
    text-align: center;
-   background: rgb(38, 9, 146);
+   background:#0db2e9;
    color: #fff;
-   padding: 10px;
+   /* padding: 10px; */
 }
 #newsletter{
     width: 50%;
@@ -104,6 +182,7 @@ h3{
 #subscribe-button{
     background-color: royalblue;
     padding: 5px;
+    margin-left: 10px;
     border-radius: 10px;
     font-size: 14px;
     color: #fff;
@@ -123,7 +202,9 @@ h3{
     text-decoration: none;
     padding: 15px;
 }
-
+.all-right {
+    margin-bottom: 0rem;
+}
 /* Contact.html styling */
 .underline{
     background-color: #0db2e9;
