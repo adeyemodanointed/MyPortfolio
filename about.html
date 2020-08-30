@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <script src="https://kit.fontawesome.com/6ef01682eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
-
-   
 </head>
+
 <body>
     <div>
-        <ul class="navbar">
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./about.html">About</a></li>
+        <ul class="navbar-others">
             <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
-    </div>  
+    </div>
 
-    <section id="about-section">
-        <div id="details">
-            <h3>About me</h3>
-             <p> I am Adeyemo Peter. I am a backend developer with basic skills in HTML, CSS and JavaScript</p>
-        </div>
-        <div class="image-container">
-            <img src="./img/my_image.jpeg" alt="My Image" id="image">
+    <section class="about-section">
+        <h3>About me</h3>
+        <div class="underline"></div>
+        <div class="image-container"></div>
+
+        <div class="about-details">
+            <h1>Backend is what I DO</h1>
+            <p> I am Adeyemo Peter. A backend developer with requisite skills in HTML, CSS, JavaScript and Python. <br> Seeking to hire a Web Developer? You got one.</p>
         </div>
     </section>
 
 
-    <!--Stack and Skill section-->
-    <section id="stack-skill">
-        <div class="box">
-            <h3>Stack</h3>
-            <p> <strong> HTML</strong></p>
-            <p><strong>CSS</strong></p>
-            <p><strong>JavaScript</strong></p>
-        </div>
-        <div id="skill" class="box">
-            <h3>Skills</h3>
-            <p> <strong> Programming</strong></p>
-            <p><strong>Writing</strong></p>
+     <!-- SKILL SECTION -->
+     <section>
+        <div class="skill-section">
+        <h2 class="skills-title">Skills </h2>
+            <section class="skills">
+                <div class="skill">
+                    <div class="skill-font">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <p class="skill-title">HTML</p>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-font">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <p class="skill-title">CSS</p>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-font">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <p class="skill-title">JavaScript</p>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-font">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <p class="skill-title">Python</p>
+                </div>
+            </section>
         </div>
     </section>
-    <div class="clr"></div>
-    <footer id="main-footer">
-        <div>
-            <a href="https://web.facebook.com/adeyemo.danointed" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-            <a href="https://www.twitter.com/adedanointed" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
-            <a href="https://www.instagram.com/adeyemodanointed/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
 
-            <div id="newsletter">
-                <p>Subscribe to my newsletter</p>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
-                <input type="button" value="Subscribe" id="subscribe-button">
-            </div>
-        </div>
-        <div class="clr"></div>
-        <div>
-        <p> &copy; All right reserved </p>
-        </div>
-    </footer>
+  <!-- FOOTER SECTION -->
+  <footer class="hero-footer">
+    <div class="hero-icon">
+        <a href="https://web.facebook.com/adeyemo.danointed" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.twitter.com/adedanointed" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/adeyemodanointed/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="hero-newsletter">
+        <p>Subscribe to my newsletter</p>
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <button>Subscribe</button>
+    </div>
     
+    <div>
+    <p class="all-right"> &copy; All right reserved | Adeyemo Peter </p>
+    </div>
+</footer>
+
 </body>
+
 </html>
