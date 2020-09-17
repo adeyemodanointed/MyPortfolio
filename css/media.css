@@ -1,0 +1,99 @@
+@media screen and (max-width: 768px) {
+    /* .home-body {
+        height: fit-content;
+    }
+    */
+    .hero {
+        margin-top: 0;
+    } 
+
+    /* .portfolio-container {
+        margin-top: 0;
+    } */
+
+
+    .testimonials {
+        max-width: 95%;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 14rem));
+        justify-content: space-between;
+    }
+
+    .about-details p {
+       
+    }
+
+    .navbar-div .toggler, .navbar-div .hamburger {
+        top: 10px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+ 
+    .navbar-div .hamburger {
+        visibility: visible;
+    }
+
+    .navbar {
+        flex-direction: column;
+    } 
+
+    .navbar li a, .navbar-others li a {
+        color: #fff;
+    }
+
+    .navbar-div .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .navbar-div .navbar-collapse > div {
+        background-color: rgba(11, 5, 68, 0.555);
+        border-radius: 50%;
+        width: 200vw;
+        display: flex;
+        height: 200vw;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0); 
+        transition: all 0.4s ease;
+    }
+
+     .navbar-div .navbar-collapse > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: all 0.4s ease; 
+    }
+
+    .navbar-div .toggler:checked ~ .navbar-collapse {
+        visibility: visible;
+    }
+
+    .navbar-div .toggler:checked ~ .navbar-collapse > div {
+        transform: scale(1);
+        transition-duration: 0.7s;
+    }
+    .navbar-div .toggler:checked ~ .navbar-collapse > div > div {
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }
+}
+    
+
+@media screen and (max-width: 767px) {
+    .hero-side-view {
+        display: none;
+    }
+}
