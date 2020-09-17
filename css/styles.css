@@ -51,7 +51,7 @@
 }
 
 .navbar-others {
-    background-color: #0db2e9;
+    background-color: #0db2e923;
 }
 
 .navbar li a, .navbar-others li a{
@@ -63,7 +63,7 @@
     transition: all 0.3s;
 }
 
-.navbar li a:hover, .navbar-others li a:hover {
+.navbar li a:hover {
     background: linear-gradient(to right, #40c9ff4d, #e81cff69);
     color: white;
 } 
@@ -235,6 +235,7 @@
     align-self: center;
     height: fit-content;
 
+    margin: 5px;
     padding: 1rem;
     border: 1px solid;
     border-radius: 50%;
@@ -293,6 +294,7 @@
     align-items: center;
     height: fit-content;
 
+    margin: 5px;
     padding: 1rem;
     background: white;
     color: black;

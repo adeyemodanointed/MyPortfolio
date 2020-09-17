@@ -1,3 +1,11 @@
+
+@media screen and (max-width: 1080px) {
+    .testimonials {
+        max-width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 14rem));
+        justify-content: space-between;
+    }
+}
 @media screen and (max-width: 768px) {
     /* .home-body {
         height: fit-content;
@@ -11,11 +19,14 @@
         margin-top: 0;
     } */
 
-
     .testimonials {
-        max-width: 95%;
-        grid-template-columns: repeat(auto-fit, minmax(8rem, 14rem));
-        justify-content: space-between;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .testimonial {
+        margin: 5px;
     }
 
     .about-details p {
@@ -88,6 +99,17 @@
     .navbar-div .toggler:checked ~ .navbar-collapse > div > div {
         opacity: 1;
         transition: opacity 0.4s ease;
+    }
+
+    /* Media query for skills and testimonials section */
+    .skills, .stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill, .stat {
+        width: 150px;
     }
 }
     
