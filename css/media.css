@@ -5,6 +5,15 @@
         grid-template-columns: repeat(auto-fit, minmax(10rem, 14rem));
         justify-content: space-between;
     }
+
+    .form-container > form > div, textarea {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .portfolio-container {
+        height: fit-content;
+    }
 }
 @media screen and (max-width: 768px) {
     /* .home-body {
@@ -27,10 +36,6 @@
 
     .testimonial {
         margin: 5px;
-    }
-
-    .about-details p {
-       
     }
 
     .navbar-div .toggler, .navbar-div .hamburger {
@@ -112,11 +117,36 @@
     .skill, .stat {
         width: 150px;
     }
+
+  
 }
     
 
 @media screen and (max-width: 767px) {
     .hero-side-view {
         display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form-container > form > div {
+        flex-wrap: wrap;
+    }
+
+    .name, .email {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personae {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 5px;
     }
 }

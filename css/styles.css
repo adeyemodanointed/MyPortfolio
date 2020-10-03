@@ -551,6 +551,7 @@
     color: #222;
     font-size: 25px;
     margin-bottom: 10px;
+    width: 70%;
 }
 
 .fill-in h3{
@@ -568,22 +569,26 @@
     margin-bottom: 20px;
 }
 
-.form-container{
-    display: block;
-    width: 80%;
+.form-container > form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form-container > form > div {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
 }
 
 .name, .email{
-    display: block;
     margin-top: 10px;
-    width: 49%;
     height: 30px;
     border-radius: 5px;
     outline: none;
     border: 1px solid;
-    border-width: thin;
-    float: left;
     padding: 5px;
+    width: 49%;
 }
 
 
@@ -595,17 +600,14 @@
     font-size: 1rem;
     color: white;
     padding: 5px;
-}
-
-.email{
-    float: right;
+    margin-top: 10px;
 }
 
 textarea {
     margin-top: 10px;
     margin-right: 10px;
     border-radius: 5px;
-    width: 100%;
+    width: 70%;
     padding: 5px;
 }
 
@@ -630,6 +632,7 @@ textarea:focus {
     margin: auto;
     padding-top: 70px;
     font-family: 'Quicksand', sans-serif;
+    height: 70vh;
 }
 
 .portfolio-content {
@@ -656,6 +659,7 @@ textarea:focus {
 .box-1 img {
     display: inline-block;
     width: 100%;
+    border-radius: 5px;
 }
 
 .box-1 h3 {
